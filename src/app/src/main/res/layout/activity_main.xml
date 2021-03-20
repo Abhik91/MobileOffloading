@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonDiscover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/connectionStatus"
+        android:layout_marginBottom="-45dp"
+        android:text="DISCOVER PEERS" />
+
+
+    <!--    <Button-->connectionStatus
+<!--        android:id="@+id/buttonDisconnect"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="248dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginEnd="53dp"-->
+<!--        android:text="DISCONNECT"-->
+<!--        tools:layout_editor_absoluteX="137dp"-->
+<!--        tools:layout_editor_absoluteY="109dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonDiscover"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="54dp"-->
+<!--        android:layout_marginTop="34dp"-->
+<!--        android:text="Discover Peers"-->
+<!--        tools:layout_editor_absoluteX="137dp"-->
+<!--        tools:layout_editor_absoluteY="109dp" />-->
+
+
+
+    <ListView
+        android:id="@+id/peerListView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@+id/buttonDiscover"
+        android:layout_marginBottom="-150dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="158dp"
+        android:background="@android:color/holo_orange_dark"/>
+
+    <TextView
+        android:id="@+id/connectionStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connection Status"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+
+<!--    <Button-->
+<!--        android:id="@+id/bt_battery"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignBottom="@+id/connectionStatus"-->
+<!--        android:layout_marginBottom="-319dp"-->
+<!--        android:text="Get Battery" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/batteryInfo"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignBottom="@+id/peerListView"-->
+<!--        android:layout_marginBottom="-67dp"-->
+<!--        android:text="Battery Info"-->
+<!--        android:textAlignment="center" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/bt_location"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignBottom="@+id/peerListView"-->
+<!--        android:layout_marginBottom="-49dp"-->
+<!--        android:text="Get Info" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/sendButton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignBottom="@+id/peerListView"-->
+<!--        android:layout_marginBottom="-57dp"-->
+<!--        android:text="SEND LOCATION" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/LatitudeInfo"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignBottom="@+id/bt_location"-->
+<!--        android:layout_marginBottom="-18dp"-->
+<!--        android:text="Latitude Info"-->
+<!--        android:textAlignment="center" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/LongitudeInfo"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignBottom="@+id/LatitudeInfo"-->
+<!--        android:layout_marginBottom="-35dp"-->
+<!--        android:text="Longitude Info"-->
+<!--        android:textAlignment="center" />-->
+    <!--
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/LongitudeInfo"
+        android:layout_marginBottom="-37dp"
+        android:text="Address Info"
+        android:textAlignment="center" />
+    -->
+
+    <Button
+        android:id="@+id/getButton"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/peerListView"
+        android:layout_marginBottom="-56dp"
+        android:text="GET INFO" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/peerListView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="-57dp"
+        android:layout_toEndOf="@+id/getButton"
+        android:text="SEND INFO" />
+
+    <TextView
+        android:id="@+id/readMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sendButton"
+        android:layout_marginBottom="-27dp"
+        android:text="MESSAGE"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/matrix1label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/readMsg"
+        android:layout_marginBottom="-30dp"
+        android:text="Matrix 1" />
+
+
+    <EditText
+        android:id="@+id/Matrix1Text"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/matrix1label"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="-53dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/matrix2label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Matrix1Text"
+        android:layout_marginBottom="-40dp"
+        android:text="Matrix 2" />
+
+    <EditText
+        android:id="@+id/Matrix2Text"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Matrix1Text"
+        android:layout_alignBottom="@+id/matrix2label"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="-58dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnCompute"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Matrix2Text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-103dp"
+        android:text="Compute" />
+
+
+</RelativeLayout>
